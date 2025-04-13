@@ -1,0 +1,78 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# General Jekyll Project Context
+- This is a Jekyll project, a static site generator built with Ruby.
+- The primary goal is to generate a static website (HTML, CSS, JS) from source files.
+- Core technologies used are: HTML, CSS (potentially Sass), JavaScript, Markdown, Liquid, and YAML.
+
+# File Structure and Conventions
+- Adhere to the standard Jekyll directory structure:
+    - `_config.yml`: Main site configuration file (YAML format).
+    - `_posts`: Blog posts go here. Filenames must follow the `YYYY-MM-DD-title.md` format.
+    - `_layouts`: HTML layout templates. Pages specify their layout using Front Matter.
+    - `_includes`: Reusable HTML snippets (partials) to be included in layouts or pages using `{% include snippet.html %}`.
+    - `_sass`: Sass partials. Often imported into a main CSS file in `assets/css`.
+    - `_data`: Data files (YAML, JSON, CSV) accessible via `site.data`.
+    - `assets`: Static assets like CSS, JavaScript, images. Often organized into subdirectories (e.g., `assets/css`, `assets/js`, `assets/images`).
+    - `_site`: The generated static website output directory (usually ignored by Git).
+    - Other `.html` or `.md` files in the root or other directories become pages.
+- Files starting with `_` (like `_layouts`, `_includes`) are part of the build process but not copied directly to the output unless specified (like `_posts`).
+- Files/folders starting with `.` or `#` are typically ignored.
+
+# Content and Templating
+- Most page and post content is written in Markdown (`.md`).
+- Use YAML Front Matter (enclosed by `---`) at the top of Markdown and HTML files to set variables like `layout`, `title`, `date`, `categories`, `tags`, and custom variables.
+    ---
+    layout: post
+    title: "Example Post Title"
+    date: YYYY-MM-DD HH:MM:SS +/-TTTT
+    categories: [blog, tech]
+    custom_variable: some_value
+    ---
+    *Markdown content starts here.*
+- Use the Liquid templating language extensively within HTML and Markdown files:
+    - Output variables: `{{ page.title }}`, `{{ site.data.filename.key }}`
+    - Tags for logic: `{% if condition %}`, `{% for item in collection %}`, `{% include file.html %}`
+- Prioritize using `_includes` for repeating HTML sections (like headers, footers, navigation) to keep code DRY (Don't Repeat Yourself).
+- Use `_layouts` to define the main structure of different page types (e.g., default, post, page). Content from the specific file is injected using `{{ content }}` within the layout.
+
+# Development Practices
+- Common command for local development: `bundle exec jekyll serve` (starts local server with auto-regeneration).
+- Common command for building the site: `bundle exec jekyll build`.
+- Use the `assets` directory for organizing CSS, JavaScript, and image files.
+- Leverage `_data` files for site-wide data like navigation links, author information, or configuration lists.
+- When suggesting plugins, prefer those supported by GitHub Pages if hosting there (e.g., `jekyll-seo-tag`, `jekyll-feed`, `jekyll-sitemap`). Check the GitHub Pages dependency versions page for compatibility.
+- Optimize assets (minify CSS/JS, compress images) for better performance. Task runners or Jekyll plugins like `jekyll-assets` can help.
+
+# Example Rule Snippets for `.cursorrules`
+
+```markdown
+## Rules for Cursor AI with Jekyll
+
+**Project Type:**
+- This project uses the Jekyll static site generator.
+- Generate code compatible with standard Jekyll conventions and Liquid templating.
+
+**Key Directories & Purpose:**
+- `_config.yml`: Site-wide settings (YAML).
+- `_posts`: Markdown blog posts (YYYY-MM-DD-title.md).
+- `_layouts`: Base HTML structures. Use `{{ content }}` for page injection.
+- `_includes`: Reusable HTML partials. Use `{% include filename.html %}`.
+- `_data`: Data files (YAML, JSON, CSV). Access with `site.data.filename`.
+- `assets/`: For CSS, JS, images.
+
+**Content Format:**
+- Primary content format is Markdown (.md).
+- Use YAML Front Matter (`--- ... ---`) for page/post metadata (layout, title, date, etc.).
+
+**Templating:**
+- Use Liquid (`{{ variable }}`, `{% tag %}`) for dynamic content and logic within HTML/Markdown.
+- Prefer `_includes` for reusable code blocks.
+- Prefer `_layouts` for page structure consistency.
+
+**Common Commands:**
+- Local server: `bundle exec jekyll serve`
+- Build site: `bundle exec jekyll build`
