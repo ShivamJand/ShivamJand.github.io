@@ -13,28 +13,26 @@
 
 
 
-  <meta name="robots" content="noindex">
-
 
 
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Hydejack | Change tagline in _config.yml</title>
+<title>System Patterns: Jekyll Portfolio Website | Hydejack</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Hydejack" />
+<meta property="og:title" content="System Patterns: Jekyll Portfolio Website" />
 <meta name="author" content="<firstname> <lastname>" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress." />
 <meta property="og:description" content="Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress." />
-<link rel="canonical" href="http://localhost:4000/offline.html" />
-<meta property="og:url" content="http://localhost:4000/offline.html" />
+<link rel="canonical" href="http://localhost:4000/memory-bank/systemPatterns/" />
+<meta property="og:url" content="http://localhost:4000/memory-bank/systemPatterns/" />
 <meta property="og:site_name" content="Hydejack" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Hydejack" />
+<meta property="twitter:title" content="System Patterns: Jekyll Portfolio Website" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"<firstname> <lastname>"},"dateModified":"2025-04-13T18:17:05+05:30","description":"Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.","headline":"Hydejack","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"<firstname> <lastname>"},"url":"http://localhost:4000/offline.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"<firstname> <lastname>"},"dateModified":"2025-04-13T18:02:09+05:30","description":"Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.","headline":"System Patterns: Jekyll Portfolio Website","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"<firstname> <lastname>"},"url":"http://localhost:4000/memory-bank/systemPatterns/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -66,7 +64,7 @@
 <meta name="generator" content="Hydejack v9.2.1" />
 
 
-<link rel="alternate" href="http://localhost:4000/offline.html" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/memory-bank/systemPatterns/" hreflang="en">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hydejack" />
 
@@ -178,7 +176,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   <main
   id="_main"
-  class="content layout-offline"
+  class="content layout-page"
   role="main"
 >
   <nav id="breadcrumbs" class="screen-only"><ul>
@@ -189,29 +187,176 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
       <li>
         
           <span>/</span>
-          <span>offline.html</span>
+          
+          
+          <a href="/memory-bank/">memory-bank</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>systemPatterns</span>
         
       </li>
     
   
 </ul></nav>
-  
+  <article class="page mb6" role="article">
+  <header>
+    <h1 class="page-title">System Patterns: Jekyll Portfolio Website</h1>
+    
 
-<div class="page">
-  <h1 class="page-title">You are Offline</h1>
+
+
   <div class="hr pb0"></div>
 
-  
-  
-    
-    
-    <p class="lead">
-      Sorry, but you appear to be offline and this page has not been prepared for offline viewing.
-<a href="/">Head back home</a> to try finding another page.
 
-    </p>
-  
-</div>
+  </header>
+
+  <h2 id="system-architecture">System Architecture</h2>
+<ol>
+  <li><strong>Static Site Generator</strong>
+    <ul>
+      <li>Jekyll as the core engine</li>
+      <li>Hydejack Pro theme for styling and functionality</li>
+      <li>Markdown for content creation</li>
+      <li>Liquid templating for dynamic content</li>
+    </ul>
+  </li>
+  <li><strong>Directory Structure</strong>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── _config.yml          # Site configuration
+├── _posts/             # Blog posts
+├── _projects/          # Project showcase
+├── _includes/          # Reusable components
+├── _layouts/           # Page templates
+├── _sass/             # SCSS styles
+├── assets/            # Static files
+│   ├── img/          # Images
+│   ├── js/           # JavaScript
+│   └── css/          # Compiled CSS
+├── _data/            # Data files
+└── _site/            # Generated site
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="key-technical-decisions">Key Technical Decisions</h2>
+<ol>
+  <li><strong>Theme Selection</strong>
+    <ul>
+      <li>Hydejack Pro for modern design</li>
+      <li>Responsive layout</li>
+      <li>Built-in features for portfolio and blog</li>
+      <li>Customization capabilities</li>
+    </ul>
+  </li>
+  <li><strong>Content Management</strong>
+    <ul>
+      <li>Markdown for content creation</li>
+      <li>YAML front matter for metadata</li>
+      <li>Liquid templating for dynamic content</li>
+      <li>Organized directory structure</li>
+    </ul>
+  </li>
+  <li><strong>Asset Management</strong>
+    <ul>
+      <li>SCSS for styling</li>
+      <li>Modular JavaScript</li>
+      <li>Optimized image handling</li>
+      <li>Asset pipeline integration</li>
+    </ul>
+  </li>
+  <li><strong>Deployment Strategy</strong>
+    <ul>
+      <li>GitHub Pages hosting</li>
+      <li>Automated builds</li>
+      <li>Version control integration</li>
+      <li>Continuous deployment</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="design-patterns">Design Patterns</h2>
+<ol>
+  <li><strong>Component Architecture</strong>
+    <ul>
+      <li>Reusable includes</li>
+      <li>Modular layouts</li>
+      <li>Consistent styling</li>
+      <li>Responsive design patterns</li>
+    </ul>
+  </li>
+  <li><strong>Content Organization</strong>
+    <ul>
+      <li>Category-based organization</li>
+      <li>Tag-based filtering</li>
+      <li>Search functionality</li>
+      <li>Related content linking</li>
+    </ul>
+  </li>
+  <li><strong>Navigation Patterns</strong>
+    <ul>
+      <li>Sidebar navigation</li>
+      <li>Breadcrumb trails</li>
+      <li>Category navigation</li>
+      <li>Search integration</li>
+    </ul>
+  </li>
+  <li><strong>Performance Patterns</strong>
+    <ul>
+      <li>Asset optimization</li>
+      <li>Lazy loading</li>
+      <li>Caching strategies</li>
+      <li>Mobile-first approach</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="integration-points">Integration Points</h2>
+<ol>
+  <li><strong>Social Media</strong>
+    <ul>
+      <li>Twitter integration</li>
+      <li>GitHub integration</li>
+      <li>LinkedIn integration</li>
+      <li>Share functionality</li>
+    </ul>
+  </li>
+  <li><strong>Analytics</strong>
+    <ul>
+      <li>Google Analytics</li>
+      <li>Visitor tracking</li>
+      <li>Performance monitoring</li>
+      <li>User behavior analysis</li>
+    </ul>
+  </li>
+  <li><strong>Comments</strong>
+    <ul>
+      <li>Disqus integration</li>
+      <li>Comment moderation</li>
+      <li>Social sharing</li>
+      <li>Engagement tracking</li>
+    </ul>
+  </li>
+  <li><strong>Forms</strong>
+    <ul>
+      <li>Contact forms</li>
+      <li>Newsletter signup</li>
+      <li>Feedback collection</li>
+      <li>Spam protection</li>
+    </ul>
+  </li>
+</ol>
+
+</article>
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
 
   
 <footer class="content" role="contentinfo">
