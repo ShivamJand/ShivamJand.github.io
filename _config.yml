@@ -38,6 +38,10 @@ keywords:              [software engineer, backend development, java, kotlin, py
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/img/profileGhibli.png
 
+# Favicon and app icons configuration
+favicon:               /assets/icons/code.ico
+apple_touch_icon:      /assets/icons/code-192x192.png
+
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:

@@ -1,0 +1,9 @@
+# Jekyll generated site
+_site/
+
+# Other common Jekyll ignores
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
