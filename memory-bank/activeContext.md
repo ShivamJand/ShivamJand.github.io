@@ -19,6 +19,15 @@
    - Markdown for content
    - Jekyll for static site generation
 
+4. **Contact Form Implementation**
+   - Formspree integration
+   - Pending tasks:
+     - Replace Formspree form ID (xxxxxxxyyy) with actual ID
+     - Create thanks.md page for form submission redirect
+     - Test form submission functionality
+     - Verify spam protection
+     - Ensure responsive design across devices
+
 ## Next Steps
 1. **Configuration**
    - Set up `_config.yml`
