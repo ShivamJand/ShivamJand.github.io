@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Hello World! 💻
-sitemap: false
+sitemap: true
+cover:  true
 ---
 
 ## Hi, I'm Shivam Jand 👋
